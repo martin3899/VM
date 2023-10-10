@@ -6,7 +6,6 @@ $pass = 'Lina'
 
 $sess = .\New-VMSession.ps1 -VMName $vmName -AdministratorPassword $pass
 
-
 .\Enable-RemoteManagementViaSession.ps1 -Session $sess
 
 You can run any commands on VM with Invoke-Command:
@@ -24,6 +23,7 @@ Invoke-Command -Session $sess {
     choco install mariadb
      # Install iis
     choco install iis.administration -y
+    
 }
 
 Remove-PSSession -Session $sess
