@@ -18,9 +18,11 @@ Invoke-Command -Session $sess {
     [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
     iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
-    # Install 7-zip mariadb iis
+    # Install 7-zip  
     choco install 7zip -y
+     # Install mariadb
     choco install mariadb
+     # Install iis
     choco install iis.administration -y
 }
 
