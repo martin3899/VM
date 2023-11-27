@@ -1,6 +1,6 @@
-$isoFile = 'C:\Users\lina.hachache\Downloads\SERVER_EVAL_x64FRE_en-us.iso'
-$vmName = 'newVM'
-$pass = 'Lina'
+$isoFile = 'C:\Users\martin.vasseur\Documents\SERVER_EVAL_x64FRE_en-us.iso'
+$vmName = 'VM_test'
+$pass = 'Martin'
 
 .\New-VMFromWindowsImage.ps1 -SourcePath $isoFile -Edition 'Windows Server 2022 Standard Evaluation (Desktop Experience)' -VMName $vmName -VHDXSizeBytes 120GB -AdministratorPassword $pass  -Version 'Server2022Standard' -MemoryStartupBytes 2GB -VMProcessorCount 4
 
